@@ -1,0 +1,24 @@
+description: 调查代码、实现修改并审查结果
+
+leader:
+  name: dev-lead
+  prompt: leader.md
+  tools: [read, grep, find, ls]
+  skills: []
+
+members:
+  - name: scout
+    description: 调查代码结构和相关实现
+    prompt: scout.md
+    tools: [read, grep, find, ls]
+    skills: []
+
+  - name: worker
+    description: 修改代码并运行验证
+    prompt: worker.md
+
+  - name: reviewer
+    description: 审查修改和测试结果
+    prompt: reviewer.md
+    tools: [read, grep, find, ls]
+    skills: []
