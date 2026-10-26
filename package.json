@@ -1,31 +1,49 @@
 {
-  "name": "pi-subagents-team",
+  "name": "@1oid/pi-subagents-team",
   "version": "0.1.0",
   "description": "由 leader 指挥、支持工具与技能白名单的 Pi 小队插件",
   "type": "module",
   "license": "MIT",
-  "keywords": ["pi-package", "pi", "subagents"],
-  "files": ["index.ts", "src", "examples", "README.md", "LICENSE"],
-  "pi": { "extensions": ["./index.ts"] },
-  "engines": { "node": ">=22.18.0" },
+  "keywords": [
+    "pi-package",
+    "pi",
+    "subagents"
+  ],
+  "files": [
+    "index.ts",
+    "src",
+    "examples",
+    "README.md",
+    "LICENSE"
+  ],
+  "pi": {
+    "extensions": [
+      "./index.ts"
+    ]
+  },
+  "engines": {
+    "node": ">=22.18.0"
+  },
   "scripts": {
     "typecheck": "tsc --noEmit",
     "test": "node --experimental-strip-types --test test/*.test.ts",
     "check": "npm run typecheck && npm test"
   },
-  "dependencies": { "yaml": "2.8.3" },
+  "dependencies": {
+    "yaml": "2.8.3"
+  },
   "peerDependencies": {
-    "@earendil-works/pi-coding-agent": "*",
     "@earendil-works/pi-ai": "*",
+    "@earendil-works/pi-coding-agent": "*",
     "@earendil-works/pi-tui": "*",
     "typebox": "*"
   },
   "devDependencies": {
-    "@earendil-works/pi-coding-agent": "1.2.0",
     "@earendil-works/pi-ai": "1.2.0",
+    "@earendil-works/pi-coding-agent": "1.2.0",
     "@earendil-works/pi-tui": "1.2.0",
-    "typebox": "1.3.27",
     "@types/node": "^22.0.0",
+    "typebox": "1.3.27",
     "typescript": "5.9.3"
   }
 }
